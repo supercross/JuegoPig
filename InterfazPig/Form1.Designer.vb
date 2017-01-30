@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class InterfazPig
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,130 +22,213 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.components = New System.ComponentModel.Container()
+        Me.txtSumaPuntos = New System.Windows.Forms.TextBox()
+        Me.txtPuntosMaquina = New System.Windows.Forms.TextBox()
+        Me.txtPuntaje = New System.Windows.Forms.TextBox()
+        Me.txtDados = New System.Windows.Forms.TextBox()
+        Me.btnTirar = New System.Windows.Forms.Button()
+        Me.btnTirarMaquina = New System.Windows.Forms.Button()
+        Me.lbPuntos = New System.Windows.Forms.Label()
+        Me.lbPuntosMaquina = New System.Windows.Forms.Label()
+        Me.lbPuntaje = New System.Windows.Forms.Label()
+        Me.lbdado = New System.Windows.Forms.Label()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnDetener = New System.Windows.Forms.Button()
+        Me.btnDetenermeMaq = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtSumaPuntos
         '
-        Me.TextBox1.Location = New System.Drawing.Point(40, 45)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txtSumaPuntos.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.txtSumaPuntos.Font = New System.Drawing.Font("Britannic Bold", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSumaPuntos.Location = New System.Drawing.Point(67, 65)
+        Me.txtSumaPuntos.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtSumaPuntos.Name = "txtSumaPuntos"
+        Me.txtSumaPuntos.Size = New System.Drawing.Size(74, 29)
+        Me.txtSumaPuntos.TabIndex = 0
         '
-        'TextBox2
+        'txtPuntosMaquina
         '
-        Me.TextBox2.Location = New System.Drawing.Point(347, 45)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.txtPuntosMaquina.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.txtPuntosMaquina.Font = New System.Drawing.Font("Britannic Bold", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPuntosMaquina.Location = New System.Drawing.Point(461, 65)
+        Me.txtPuntosMaquina.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtPuntosMaquina.Name = "txtPuntosMaquina"
+        Me.txtPuntosMaquina.Size = New System.Drawing.Size(90, 29)
+        Me.txtPuntosMaquina.TabIndex = 1
         '
-        'TextBox3
+        'txtPuntaje
         '
-        Me.TextBox3.Location = New System.Drawing.Point(194, 97)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.txtPuntaje.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.txtPuntaje.Font = New System.Drawing.Font("Britannic Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPuntaje.ForeColor = System.Drawing.SystemColors.MenuText
+        Me.txtPuntaje.Location = New System.Drawing.Point(274, 179)
+        Me.txtPuntaje.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtPuntaje.Name = "txtPuntaje"
+        Me.txtPuntaje.Size = New System.Drawing.Size(88, 29)
+        Me.txtPuntaje.TabIndex = 2
+        Me.txtPuntaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox4
+        'txtDados
         '
-        Me.TextBox4.Location = New System.Drawing.Point(194, 184)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 3
+        Me.txtDados.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.txtDados.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtDados.Font = New System.Drawing.Font("Britannic Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDados.ForeColor = System.Drawing.SystemColors.MenuText
+        Me.txtDados.Location = New System.Drawing.Point(274, 285)
+        Me.txtDados.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtDados.Name = "txtDados"
+        Me.txtDados.Size = New System.Drawing.Size(88, 29)
+        Me.txtDados.TabIndex = 3
+        Me.txtDados.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Button1
+        'btnTirar
         '
-        Me.Button1.Location = New System.Drawing.Point(50, 262)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Tirar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnTirar.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTirar.ForeColor = System.Drawing.Color.DarkGreen
+        Me.btnTirar.Location = New System.Drawing.Point(67, 322)
+        Me.btnTirar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnTirar.Name = "btnTirar"
+        Me.btnTirar.Size = New System.Drawing.Size(100, 46)
+        Me.btnTirar.TabIndex = 4
+        Me.btnTirar.Text = "Tirar"
+        Me.btnTirar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnTirarMaquina
         '
-        Me.Button2.Location = New System.Drawing.Point(356, 262)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Tirar Maquina"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnTirarMaquina.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTirarMaquina.ForeColor = System.Drawing.Color.DarkGreen
+        Me.btnTirarMaquina.Location = New System.Drawing.Point(432, 322)
+        Me.btnTirarMaquina.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnTirarMaquina.Name = "btnTirarMaquina"
+        Me.btnTirarMaquina.Size = New System.Drawing.Size(133, 46)
+        Me.btnTirarMaquina.TabIndex = 5
+        Me.btnTirarMaquina.Text = "Tirar Maquina"
+        Me.btnTirarMaquina.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lbPuntos
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(63, 15)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Puntos"
+        Me.lbPuntos.AutoSize = True
+        Me.lbPuntos.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbPuntos.ForeColor = System.Drawing.Color.YellowGreen
+        Me.lbPuntos.Location = New System.Drawing.Point(63, 27)
+        Me.lbPuntos.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbPuntos.Name = "lbPuntos"
+        Me.lbPuntos.Size = New System.Drawing.Size(61, 20)
+        Me.lbPuntos.TabIndex = 6
+        Me.lbPuntos.Text = "Puntos"
         '
-        'Label2
+        'lbPuntosMaquina
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(353, 15)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(84, 13)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Puntos Maquina"
+        Me.lbPuntosMaquina.AutoSize = True
+        Me.lbPuntosMaquina.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbPuntosMaquina.ForeColor = System.Drawing.Color.YellowGreen
+        Me.lbPuntosMaquina.Location = New System.Drawing.Point(436, 27)
+        Me.lbPuntosMaquina.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbPuntosMaquina.Name = "lbPuntosMaquina"
+        Me.lbPuntosMaquina.Size = New System.Drawing.Size(129, 20)
+        Me.lbPuntosMaquina.TabIndex = 7
+        Me.lbPuntosMaquina.Text = "Puntos Maquina"
         '
-        'Label3
+        'lbPuntaje
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(218, 66)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 13)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Puntaje"
+        Me.lbPuntaje.AutoSize = True
+        Me.lbPuntaje.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbPuntaje.ForeColor = System.Drawing.Color.YellowGreen
+        Me.lbPuntaje.Location = New System.Drawing.Point(284, 147)
+        Me.lbPuntaje.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbPuntaje.Name = "lbPuntaje"
+        Me.lbPuntaje.Size = New System.Drawing.Size(65, 20)
+        Me.lbPuntaje.TabIndex = 8
+        Me.lbPuntaje.Text = "Puntaje"
         '
-        'Label4
+        'lbdado
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(218, 158)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(33, 13)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Dado"
+        Me.lbdado.AutoSize = True
+        Me.lbdado.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbdado.ForeColor = System.Drawing.Color.YellowGreen
+        Me.lbdado.Location = New System.Drawing.Point(284, 253)
+        Me.lbdado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbdado.Name = "lbdado"
+        Me.lbdado.Size = New System.Drawing.Size(48, 20)
+        Me.lbdado.TabIndex = 9
+        Me.lbdado.Text = "Dado"
         '
-        'Form1
+        'btnSalir
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.btnSalir.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.ForeColor = System.Drawing.Color.Maroon
+        Me.btnSalir.Location = New System.Drawing.Point(288, 372)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(74, 32)
+        Me.btnSalir.TabIndex = 10
+        Me.btnSalir.Text = "SALIR"
+        Me.btnSalir.UseVisualStyleBackColor = True
+        '
+        'btnDetener
+        '
+        Me.btnDetener.Location = New System.Drawing.Point(165, 122)
+        Me.btnDetener.Name = "btnDetener"
+        Me.btnDetener.Size = New System.Drawing.Size(83, 26)
+        Me.btnDetener.TabIndex = 11
+        Me.btnDetener.Text = "Detenerme"
+        Me.btnDetener.UseVisualStyleBackColor = True
+        '
+        'btnDetenermeMaq
+        '
+        Me.btnDetenermeMaq.Location = New System.Drawing.Point(384, 122)
+        Me.btnDetenermeMaq.Name = "btnDetenermeMaq"
+        Me.btnDetenermeMaq.Size = New System.Drawing.Size(84, 26)
+        Me.btnDetenermeMaq.TabIndex = 12
+        Me.btnDetenermeMaq.Text = "Detenerme"
+        Me.btnDetenermeMaq.UseVisualStyleBackColor = True
+        '
+        'InterfazPig
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(554, 363)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ClientSize = New System.Drawing.Size(653, 416)
+        Me.Controls.Add(Me.btnDetenermeMaq)
+        Me.Controls.Add(Me.btnDetener)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.lbdado)
+        Me.Controls.Add(Me.lbPuntaje)
+        Me.Controls.Add(Me.lbPuntosMaquina)
+        Me.Controls.Add(Me.lbPuntos)
+        Me.Controls.Add(Me.btnTirarMaquina)
+        Me.Controls.Add(Me.btnTirar)
+        Me.Controls.Add(Me.txtDados)
+        Me.Controls.Add(Me.txtPuntaje)
+        Me.Controls.Add(Me.txtPuntosMaquina)
+        Me.Controls.Add(Me.txtSumaPuntos)
+        Me.Font = New System.Drawing.Font("Arial", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Name = "InterfazPig"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Juego Pig "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents txtSumaPuntos As TextBox
+    Friend WithEvents txtPuntosMaquina As TextBox
+    Friend WithEvents txtPuntaje As TextBox
+    Friend WithEvents txtDados As TextBox
+    Friend WithEvents btnTirar As Button
+    Friend WithEvents btnTirarMaquina As Button
+    Friend WithEvents lbPuntos As Label
+    Friend WithEvents lbPuntosMaquina As Label
+    Friend WithEvents lbPuntaje As Label
+    Friend WithEvents lbdado As Label
+    Friend WithEvents btnSalir As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents btnDetener As Button
+    Friend WithEvents btnDetenermeMaq As Button
 End Class
