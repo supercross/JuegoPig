@@ -1,4 +1,14 @@
 ﻿Public Class InterfazPig
+
+    Dim puntaje As Integer = 0
+    Dim puntajeParcial As Integer = 0
+    Dim puntajeJugador As Integer = 0
+    Dim puntajeMaquina As Integer = 0
+    Dim parcial As Integer = 0
+
+
+
+
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lbPuntos.Click
 
     End Sub
@@ -16,49 +26,133 @@
 
     Private Sub btnTirar_Click(sender As Object, e As EventArgs) Handles btnTirar.Click
 
-        Dim Num As Integer
-        Num = Int(6 - 1) * Rnd() + 1
+        'Dim Num As Integer = random()
+        'Dim tiradas As Integer
 
-        txtDados.Text = Num
-
-
-        txtPuntaje.Text = Num
-
-
-        'For i = 0 To txtDados
-        txtPuntaje.Text = Val(Num) + 1
-        'Next
+        'Num = Int(6 - 1) * Rnd() + 1 'numero ramdon
 
 
 
-        If txtDados.Text = 1 Then
-            MessageBox.Show("Su turno a terminado :( , es turno del computador :)  !!!! ")
-        End If
+        'txtDados.Text = Num
+
+        'txtPuntaje.Text = Val(txtPuntaje.Text) + Num
+
+
+        'If txtDados.Text = 1 And tiradas <= (tiradas / 2) Then
+
+        'txtPuntaje.Text = 0
+        'txtDados.Text = ""
+        'MessageBox.Show("Su turno Finalizo :( , es turno del computador :)  !!!! ")
+
+        'turnoCompu()
+
+        'End If
+        turnoJugador()
 
 
     End Sub
 
     Private Sub btnTirarMaquina_Click(sender As Object, e As EventArgs) Handles btnTirarMaquina.Click
 
-        Dim ale As Integer
+        'txtPuntaje.Text += Val(txtPuntaje.Text)
+        'txtPuntaje.Text = 0
+        'txtPuntaje.Text = ""
+
+
+        'If txtDados.Text = 1 Then
+        ' MessageBox.Show("Su turno termino :( , es turno del jugador 1")
+
+        ' turnoCompu()
+
+        'End If
+
+        'Dim ale As Integer = random()
+        'Dim tiradas As Integer
+        'ale = Int(6 - 1) * Rnd() + 1
+        'txtDados.Text = ale
+        'txtPuntaje.Text = Val(txtPuntaje.Text) + ale
+
+
+
+
+
+        'If txtDados.Text = 1 And tiradas <= (tiradas / 2) Then
+
+        'txtPuntaje.Text = 0
+        'txtDados.Text = ""
+        'MessageBox.Show("Su turno termino :( , es turno del jugador 1")
+        'turnoJugador()
+
+        'End If
+        turnoCompu()
+
+    End Sub
+
+    Sub turnoCompu()
+        'Dim conta As Integer = 0
+        'Dim tiradas As Integer = 0
+        'Dim bandera As Integer = 0
+
+        'While conta <= (tiradas / 2) + 1
+
+        'End While
+        Dim ale As Integer = random()
+        Dim tiradas As Integer
+        'tiradas = Int(5 - 2) * Rnd() + 1
         ale = Int(6 - 1) * Rnd() + 1
         txtDados.Text = ale
+        txtPuntaje.Text = Val(txtPuntaje.Text) + ale
 
+        If txtDados.Text = 1 And tiradas <= (tiradas / 2) Then
 
-        ale = ale + ale
-
-        txtPuntaje.Text = ale
-
-        If txtDados.Text = 6 Then
+            txtPuntaje.Text = 0
+            txtDados.Text = ""
             MessageBox.Show("Su turno termino :( , es turno del jugador 1")
+            'turnoJugador()
+
+        End If
+    End Sub
+    Sub turnoJugador()
+        Dim Num As Integer = random()
+        Dim tiradas As Integer
+        'tiradas = Int(5 - 2) * Rnd() + 1
+
+        Num = Int(6 - 1) * Rnd() + 1 'numero ramdon
+
+
+
+        txtDados.Text = Num
+
+        txtPuntaje.Text = Val(txtPuntaje.Text) + Num
+
+
+        If txtDados.Text = 1 And tiradas <= (tiradas / 2) Then
+
+            txtPuntaje.Text = 0
+            txtDados.Text = ""
+            MessageBox.Show("Su turno Finalizo :( , es turno del computador :)  !!!! ")
+
+            'turnoCompu()
+
         End If
 
     End Sub
 
+    Function random() As Integer
+
+        Randomize()
+        Dim Num As Integer = CInt(Math.Floor((1 - 2 + 1) * Rnd())) + 1
+        Return Num 
+
+    End Function
+
+
+
     Private Sub txtPuntaje_TextChanged(sender As Object, e As EventArgs) Handles txtPuntaje.TextChanged
 
 
-        'txtPuntaje.Clear()
+
+
 
 
 
@@ -71,14 +165,41 @@
 
     Private Sub btnDetener_Click(sender As Object, e As EventArgs) Handles btnDetener.Click
 
-        txtSumaPuntos.Text = txtPuntaje.Text
+        txtSumaPuntos.Text = Val(txtPuntaje.Text) + Val(txtSumaPuntos.Text)
+
+        txtPuntaje.Text = 0
+        txtDados.Text = ""
+        If txtSumaPuntos.Text >= 100 Then
+            MessageBox.Show("FELICIDADES HAZ GANADO EL JUEGO  ! ! ! ! ! ! ! ! ! ! ")
+            txtSumaPuntos.Text = ""
+            txtPuntosMaquina.Text = ""
+            txtPuntaje.Text = ""
+            txtDados.Text = ""
+            MessageBox.Show("Desea realizar otra partida")
+
+        End If
+
+
+
 
 
     End Sub
 
     Private Sub btnDetenermeMaq_Click(sender As Object, e As EventArgs) Handles btnDetenermeMaq.Click
 
-        txtPuntosMaquina.Text = txtPuntaje.Text
+        txtPuntosMaquina.Text = Val(txtPuntaje.Text) + Val(txtPuntosMaquina.Text)
+        txtPuntaje.Text = 0
+        txtDados.Text = ""
+        If txtPuntosMaquina.Text >= 100 Then
+            MessageBox.Show("FELICIDADES HAZ GANADO EL JUEGO   ! ! ! ! ! ! ! ! ! ! ! ! !")
+            txtPuntosMaquina.Text = ""
+            txtSumaPuntos.Text = ""
+            txtPuntaje.Text = ""
+            txtDados.Text = ""
+            MessageBox.Show("Desea realizar otra partida")
+        End If
+
+
 
     End Sub
 

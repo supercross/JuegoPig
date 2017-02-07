@@ -48,6 +48,7 @@ Partial Class InterfazPig
         Me.txtSumaPuntos.Name = "txtSumaPuntos"
         Me.txtSumaPuntos.Size = New System.Drawing.Size(74, 29)
         Me.txtSumaPuntos.TabIndex = 0
+        Me.txtSumaPuntos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtPuntosMaquina
         '
@@ -58,13 +59,14 @@ Partial Class InterfazPig
         Me.txtPuntosMaquina.Name = "txtPuntosMaquina"
         Me.txtPuntosMaquina.Size = New System.Drawing.Size(90, 29)
         Me.txtPuntosMaquina.TabIndex = 1
+        Me.txtPuntosMaquina.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtPuntaje
         '
         Me.txtPuntaje.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.txtPuntaje.Font = New System.Drawing.Font("Britannic Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPuntaje.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.txtPuntaje.Location = New System.Drawing.Point(274, 179)
+        Me.txtPuntaje.Location = New System.Drawing.Point(274, 193)
         Me.txtPuntaje.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtPuntaje.Name = "txtPuntaje"
         Me.txtPuntaje.Size = New System.Drawing.Size(88, 29)
@@ -137,7 +139,7 @@ Partial Class InterfazPig
         Me.lbPuntaje.AutoSize = True
         Me.lbPuntaje.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbPuntaje.ForeColor = System.Drawing.Color.YellowGreen
-        Me.lbPuntaje.Location = New System.Drawing.Point(284, 147)
+        Me.lbPuntaje.Location = New System.Drawing.Point(284, 170)
         Me.lbPuntaje.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbPuntaje.Name = "lbPuntaje"
         Me.lbPuntaje.Size = New System.Drawing.Size(65, 20)
