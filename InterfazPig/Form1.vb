@@ -26,27 +26,6 @@
 
     Private Sub btnTirar_Click(sender As Object, e As EventArgs) Handles btnTirar.Click
 
-        'Dim Num As Integer = random()
-        'Dim tiradas As Integer
-
-        'Num = Int(6 - 1) * Rnd() + 1 'numero ramdon
-
-
-
-        'txtDados.Text = Num
-
-        'txtPuntaje.Text = Val(txtPuntaje.Text) + Num
-
-
-        'If txtDados.Text = 1 And tiradas <= (tiradas / 2) Then
-
-        'txtPuntaje.Text = 0
-        'txtDados.Text = ""
-        'MessageBox.Show("Su turno Finalizo :( , es turno del computador :)  !!!! ")
-
-        'turnoCompu()
-
-        'End If
         turnoJugador()
 
 
@@ -54,51 +33,15 @@
 
     Private Sub btnTirarMaquina_Click(sender As Object, e As EventArgs) Handles btnTirarMaquina.Click
 
-        'txtPuntaje.Text += Val(txtPuntaje.Text)
-        'txtPuntaje.Text = 0
-        'txtPuntaje.Text = ""
-
-
-        'If txtDados.Text = 1 Then
-        ' MessageBox.Show("Su turno termino :( , es turno del jugador 1")
-
-        ' turnoCompu()
-
-        'End If
-
-        'Dim ale As Integer = random()
-        'Dim tiradas As Integer
-        'ale = Int(6 - 1) * Rnd() + 1
-        'txtDados.Text = ale
-        'txtPuntaje.Text = Val(txtPuntaje.Text) + ale
-
-
-
-
-
-        'If txtDados.Text = 1 And tiradas <= (tiradas / 2) Then
-
-        'txtPuntaje.Text = 0
-        'txtDados.Text = ""
-        'MessageBox.Show("Su turno termino :( , es turno del jugador 1")
-        'turnoJugador()
-
-        'End If
         turnoCompu()
 
     End Sub
 
     Sub turnoCompu()
-        'Dim conta As Integer = 0
-        'Dim tiradas As Integer = 0
-        'Dim bandera As Integer = 0
 
-        'While conta <= (tiradas / 2) + 1
-
-        'End While
         Dim ale As Integer = random()
         Dim tiradas As Integer
-        'tiradas = Int(5 - 2) * Rnd() + 1
+
         ale = Int(6 - 1) * Rnd() + 1
         txtDados.Text = ale
         txtPuntaje.Text = Val(txtPuntaje.Text) + ale
@@ -108,14 +51,16 @@
             txtPuntaje.Text = 0
             txtDados.Text = ""
             MessageBox.Show("Su turno termino :( , es turno del jugador 1")
-            'turnoJugador()
+
 
         End If
     End Sub
     Sub turnoJugador()
+
+
+
         Dim Num As Integer = random()
         Dim tiradas As Integer
-        'tiradas = Int(5 - 2) * Rnd() + 1
 
         Num = Int(6 - 1) * Rnd() + 1 'numero ramdon
 
@@ -130,9 +75,8 @@
 
             txtPuntaje.Text = 0
             txtDados.Text = ""
-            MessageBox.Show("Su turno Finalizo :( , es turno del computador :)  !!!! ")
+            MessageBox.Show("Su turno Finalizo :( , es turno del Jugador 2:)  !!!! ")
 
-            'turnoCompu()
 
         End If
 
@@ -175,11 +119,11 @@
             txtPuntosMaquina.Text = ""
             txtPuntaje.Text = ""
             txtDados.Text = ""
-            MessageBox.Show("Desea realizar otra partida")
+            MessageBox.Show("Desea realizar otra partida?")
 
         End If
 
-
+        'MessageBox.Show("Turno del Jugador 2")
 
 
 
@@ -196,9 +140,12 @@
             txtSumaPuntos.Text = ""
             txtPuntaje.Text = ""
             txtDados.Text = ""
-            MessageBox.Show("Desea realizar otra partida")
+
+            MessageBox.Show("Desea realizar otra partida?")
+
         End If
 
+        'MessageBox.Show("Turno del Jugador 1")
 
 
     End Sub
@@ -208,6 +155,16 @@
     End Sub
 
     Private Sub txtPuntosMaquina_TextChanged(sender As Object, e As EventArgs) Handles txtPuntosMaquina.TextChanged
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
